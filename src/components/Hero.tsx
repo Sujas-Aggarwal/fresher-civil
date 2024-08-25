@@ -1,6 +1,6 @@
 function Hero() {
     return (
-        <div className="flex justify-center items-center w-full min-h-screen">
+        <div className="flex justify-center items-center w-full h-screen">
             <video
                 src="https://video-public.canva.com/VAFKkbUWLwU/v/3484504a00.mp4?bandwidth=2935444&resolution=4000"
                 autoPlay
