@@ -13,26 +13,28 @@ export default function Navbar() {
         <div className="w-full z-20 h-[50px] md:h-[70px] backdrop-blur-sm text-white font-[Poppins] fixed ">
             <div className="w-full h-full flex justify-between px-6 md:px-10 items-center">
                 <div id="left-box">
-                    <Link href={"/"} className=" text-2xl md:text-3xl font-extrabold cursor-pointer">
+                    <Link
+                        href={"/"}
+                        className=" text-2xl md:text-3xl font-extrabold cursor-pointer"
+                    >
                         CEF
                     </Link>
                 </div>
                 <div className="hidden md:flex justify-center items-center gap-8">
-                    <span className="nav-item-home cursor-pointer relative overflow-x-clip">
-                        Freshers
-                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
-                    </span>
-                    <Link href={"/memories"} className="nav-item-home relative cursor-pointer overflow-x-clip">
+                    <Link
+                        href={"/memories"}
+                        className="nav-item-home relative cursor-pointer overflow-x-clip"
+                    >
                         Memories
                         <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
                     </Link>
-                    <span className="nav-item-home relative cursor-pointer overflow-x-clip">
-                        Vision
-                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
-                    </span>
-                    <span className="cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none">
+
+                    <Link
+                        href={"https://forms.gle/DT82AhGdQVGYRECu6"}
+                        className="cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none"
+                    >
                         Register
-                    </span>
+                    </Link>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={toggleMenu} className="focus:outline-none">
@@ -60,22 +62,22 @@ export default function Navbar() {
                     isOpen ? "block" : "hidden"
                 } md:hidden  text-center   text-white bg-black/40`}
             >
-                <div className="flex  flex-col items-center gap-4 pt-4 py-4 " >
-                    <span className=" text-md nav-item-home cursor-pointer relative overflow-x-clip ">
-                        Freshers
-                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
-                    </span>
-                    <Link href={"/memories"} className=" text-md nav-item-home relative cursor-pointer overflow-x-clip">
+                <div className="flex  flex-col items-center gap-4 pt-4 py-4 ">
+
+                    <Link
+                        href={"/memories"}
+                        className=" text-md nav-item-home relative cursor-pointer overflow-x-clip"
+                    >
                         Memories
                         <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
                     </Link>
-                    <span className=" text-md nav-item-home relative cursor-pointer overflow-x-clip">
-                        Vision
-                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
-                    </span>
-                    <span className=" text-md cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none">
+
+                    <Link
+                        href={"https://forms.gle/DT82AhGdQVGYRECu6"}
+                        className=" text-md cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none"
+                    >
                         Register
-                    </span>
+                    </Link>
                 </div>
             </div>
         </div>
