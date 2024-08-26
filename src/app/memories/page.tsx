@@ -23,7 +23,7 @@ function Carousel() {
                 className="flex gap-1 md:gap-6 justify-center items-center"
             >
                 <button
-                    className="p-2  absolute left-0   invert bg-white/10 "
+                    className="p-4  absolute left-0   invert bg-white/10 "
                     onClick={() => {
                         setCurrentImg(currentImg - 1);
                     }}
@@ -40,12 +40,12 @@ function Carousel() {
                     <img
                         src={images[currentImg % images.length]}
                         alt="Image"
-                        className="w-full object-cover h-full object-center"
+                        className="w-full object-contain h-full object-center"
                     />
                     ;
                 </div>
                 <button
-                    className="p-2  absolute right-0  invert bg-white/10 "
+                    className="p-4  absolute right-0  invert bg-white/10 "
                     onClick={() => {
                         setCurrentImg(currentImg + 1);
                     }}
