@@ -9,11 +9,11 @@ html {
 body {
     font-family: "Poppins";
     overflow-x: hidden;
-    background: #133748;
+    background: #250B32;
     color: white;
 }
 ::selection {
-    background: #133748;
+    background: #250B32;
     color: white;
 }
 .nav-item-home:hover > span {

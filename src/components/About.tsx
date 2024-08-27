@@ -1,23 +1,22 @@
-import Link from "next/link";
-
 export default function About() {
     let aboutPosts = [
         {
-            image: "https://plus.unsplash.com/premium_photo-1686730540277-c7e3a5571553?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "https://images.unsplash.com/photo-1647885672356-ece5b759530a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Food",
-            desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit tempora aperiam! Aliquam numquam officiis in deleniti quod ea veniam a iusto placeat atque officia unde, molestias, nobis vitae earum!",
+            desc: "A delightful spread of mouthwatering dishes will be available, catering to every palate. From savory snacks to delicious desserts, the food corner promises a culinary experience that will satisfy all taste buds.",
         },
         {
-            image: "https://images.unsplash.com/photo-1616840845685-362ddf65fb58?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title: "Food",
-            desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit tempora aperiam! Aliquam numquam officiis in deleniti quod ea veniam a iusto placeat atque officia unde, molestias, nobis vitae earum!",
+            image: "https://images.unsplash.com/photo-1679746556827-a4722297a613?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Dance",
+            desc: "The dance floor will come alive with vibrant energy as the latest tracks set the rhythm. This is the perfect opportunity for everyone to showcase their best moves and enjoy a night of lively dancing.",
         },
         {
-            image: "https://plus.unsplash.com/premium_photo-1673448758901-dfd18fd2dd52?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title: "Food",
-            desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit tempora aperiam! Aliquam numquam officiis in deleniti quod ea veniam a iusto placeat atque officia unde, molestias, nobis vitae earum!",
+            image: "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Mr. & Ms. Fresher",
+            desc: "The Mr. & Ms. Fresher competition is the highlight of the evening, celebrating the charm, confidence, and talent of the new students. Participants will take part in a series of exciting challenges, with the winners earning the prestigious titles of Mr. and Ms. Fresher. It's a night of elegance, excitement, and lasting memories.",
         },
     ];
+    
     return (
         <div className="p-4">
             {aboutPosts.map((item, index) => {
@@ -25,9 +24,9 @@ export default function About() {
                     <Card key={index} {...item} direction={index % 2 == 0} />
                 );
             })}
-            <Link href={"https://forms.gle/DT82AhGdQVGYRECu6"} className="w-full  flex justify-center items-center text-2xl font-bold border-solid p-4 border-white border-[2px] hover:bg-white hover:text-black cursor-pointer">
-                Register
-            </Link>
+            <span className="w-full  flex justify-center items-center text-2xl font-bold border-solid p-4 border-white border-[2px] hover:bg-white hover:text-black cursor-pointer">
+                Coming Soon
+            </span>
         </div>
     );
 }
@@ -53,8 +52,8 @@ function Card({
                 />
             </div>
             <div className="max-w-lg">
-                <h1 className="text-3xl font-bold">{title}</h1>
-                <p className="max-w-[60ch] text-pretty">{desc}</p>
+                <h1 className="text-2xl md:text-3xl font-bold">{title}</h1>
+                <p className="max-w-[60ch] text-pretty text-sm mt-2">{desc}</p>
             </div>
         </div>
     );

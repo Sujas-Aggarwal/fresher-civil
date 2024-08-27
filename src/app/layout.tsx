@@ -15,8 +15,10 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body>
-                <Navbar />
-                {children}
+                <main >
+                    <Navbar />
+                    {children}
+                </main>
             </body>
         </html>
     );

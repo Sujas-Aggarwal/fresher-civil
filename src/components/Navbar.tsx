@@ -22,6 +22,13 @@ export default function Navbar() {
                 </div>
                 <div className="hidden md:flex justify-center items-center gap-8">
                     <Link
+                        href={"/"}
+                        className="nav-item-home relative cursor-pointer overflow-x-clip"
+                    >
+                        Home
+                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
+                    </Link>
+                    <Link
                         href={"/memories"}
                         className="nav-item-home relative cursor-pointer overflow-x-clip"
                     >
@@ -29,12 +36,9 @@ export default function Navbar() {
                         <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
                     </Link>
 
-                    <Link
-                        href={"https://forms.gle/DT82AhGdQVGYRECu6"}
-                        className="cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none"
-                    >
-                        Register
-                    </Link>
+                    <span className="cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none">
+                        Coming Soon
+                    </span>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={toggleMenu} className="focus:outline-none">
@@ -63,7 +67,13 @@ export default function Navbar() {
                 } md:hidden  text-center   text-white bg-black/40`}
             >
                 <div className="flex  flex-col items-center gap-4 pt-4 py-4 ">
-
+                    <Link
+                        href={"/"}
+                        className=" text-md nav-item-home relative cursor-pointer overflow-x-clip"
+                    >
+                        Home
+                        <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
+                    </Link>
                     <Link
                         href={"/memories"}
                         className=" text-md nav-item-home relative cursor-pointer overflow-x-clip"
@@ -72,12 +82,9 @@ export default function Navbar() {
                         <span className="w-full transition-all duration-250 left-[-100%] absolute h-[2px] bottom-[-3px] bg-white"></span>
                     </Link>
 
-                    <Link
-                        href={"https://forms.gle/DT82AhGdQVGYRECu6"}
-                        className=" text-md cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none"
-                    >
-                        Register
-                    </Link>
+                    <span className=" text-md cursor-pointer border-solid border-[2px] border-white py-[6px] px-4 rounded-full hover:bg-white hover:text-black select-none">
+                        Coming Soon
+                    </span>
                 </div>
             </div>
         </div>
