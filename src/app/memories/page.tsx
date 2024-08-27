@@ -25,7 +25,7 @@ function Carousel() {
                 <button
                     className="p-4  absolute left-0   invert bg-white/10 "
                     onClick={() => {
-                        setCurrentImg(currentImg - 1);
+                        setCurrentImg(currentImg!=0?currentImg - 1:images.length-1);
                     }}
                 >
                     <LeftButton />
