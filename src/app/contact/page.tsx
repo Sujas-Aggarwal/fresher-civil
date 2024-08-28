@@ -8,10 +8,10 @@ export default function Contact() {
             />
             <div className=" w-full flex justify-center items-center flex-wrap gap-6 p-2">
                 <p>
-                    This Party is strictly only for Civil Freshers UG at IIT
+                    {`This Party is strictly only for Civil Freshers UG at IIT
                     Delhi. So if you don't have the contact of the team, it only
                     means that you are someone who does not fall in this
-                    category. So, Don't Bother.
+                    category. So, Don't Bother.`}
                 </p>
             </div>
         </div>
