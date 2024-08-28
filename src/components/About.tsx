@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
     let aboutPosts = [
         {
@@ -24,9 +26,9 @@ export default function About() {
                     <Card key={index} {...item} direction={index % 2 == 0} />
                 );
             })}
-            <span className="w-full  flex justify-center items-center text-2xl font-bold border-solid p-4 border-white border-[2px] hover:bg-white hover:text-black cursor-pointer">
-                Coming Soon
-            </span>
+            <Link href={"https://forms.gle/cqFoNK72XhkEtgnW9"} className="w-full  flex justify-center items-center text-2xl font-bold border-solid p-4 border-white border-[2px] hover:bg-white hover:text-black cursor-pointer">
+                Register
+            </Link>
         </div>
     );
 }
